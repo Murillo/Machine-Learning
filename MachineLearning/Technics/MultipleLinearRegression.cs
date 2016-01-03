@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Linq;
 
-namespace MachineLearning
+namespace MachineLearning.Technics
 {
     public class MultipleLinearRegression
     {
@@ -89,11 +90,6 @@ namespace MachineLearning
             {
                 _weight[i] = r.NextDouble();
             }
-        }
-
-        private double[] MeanNormalization()
-        {
-            return new double[] {};
         }
     }
 }

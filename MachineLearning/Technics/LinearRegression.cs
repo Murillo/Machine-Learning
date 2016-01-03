@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace MachineLearning
+namespace MachineLearning.Technics
 {
     public class LinearRegression
     {
