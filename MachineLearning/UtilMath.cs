@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace MachineLearning
 {
     public static class UtilMath
     {
-        public static double[] MeanNormalization(this double[] values)
+        public static double[] MeanNormalizationStandardization(this double[] values)
         {
             double[] valuesTemp = new double[values.Length];
             for (int i = 0; i < values.Length; i++)
@@ -17,7 +16,7 @@ namespace MachineLearning
             return valuesTemp;
         }
 
-        public static double[,] MeanNormalization(this double[,] values)
+        public static double[,] MeanNormalizationStandardization(this double[,] values)
         {
             int amountTrain = values.Length / values.GetLength(1);
             int amountValues = values.GetLength(1);

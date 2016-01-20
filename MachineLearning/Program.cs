@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MachineLearning.Technics;
 
@@ -8,6 +9,21 @@ namespace MachineLearning
     {
         static void Main(string[] args)
         {
+            #region Multiple Attribute Value Theory
+            Console.WriteLine("Multiple Attribute Value Theory");
+            double[,] attributes = { { 0.5, 0.1, 0.3 }, { 0.2, 0.9, 0.4 }, { 0.4, 0.5, 0.6 } };
+            MultipleAttributeValueTheory mavtAttr1 = new MultipleAttributeValueTheory(attributes);
+            mavtAttr1.SetMainAttribute(new []{ 1, 3, 3 });
+            mavtAttr1.SetFunctions(new [] { Function.Linear, Function.Linear, Function.Linear });
+            Console.WriteLine(Math.Round(mavtAttr1.Preference(),2));
+
+            MultipleAttributeValueTheory mavtAttr2 = new MultipleAttributeValueTheory(attributes);
+            mavtAttr2.SetMainAttribute(new[] { 2, 1, 3 });
+            mavtAttr2.SetFunctions(new[] { Function.Linear, Function.Linear, Function.Linear });
+            Console.WriteLine(Math.Round(mavtAttr2.Preference(), 2));
+            Console.WriteLine("--------------------------");
+            #endregion
+
             #region Linear Regression
 
             Console.WriteLine("Linear Regression");
