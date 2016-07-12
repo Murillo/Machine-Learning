@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="Technics\LinearRegression.cs" />
     <Compile Include="Technics\MultilayerPerceptron.cs" />
-    <Compile Include="Technics\MultipleAttributeValueTheory.cs" />
     <Compile Include="Technics\MultipleLinearRegression.cs" />
     <Compile Include="Technics\Perceptron.cs" />
     <Compile Include="Program.cs" />

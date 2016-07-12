@@ -9,22 +9,7 @@ namespace MachineLearning
     {
         static void Main(string[] args)
         {
-            #region Multiple Attribute Value Theory
-            Console.WriteLine("Multiple Attribute Value Theory");
-            double[,] attributes =
-            {
-                { 0.4, 0.2, 0.5, 0.8 } /* Attr 1 */,
-                { 0.3, 0.4, 0.8, 0.9 } /* Attr 2 */,
-                {   0,   1,   0,   0 } /* Attr 3 */
-            };
-            MultipleAttributeValueTheory mavt = new MultipleAttributeValueTheory(attributes);
-            var results = mavt.Preference();
-            foreach (double result in results)
-            {
-                Console.WriteLine(Math.Round(result, 2));
-            }
-            #endregion
-
+            
             #region Linear Regression
 
             Console.WriteLine("Linear Regression");
